@@ -80,3 +80,8 @@ bool WalkStack(int pHeight)
 
 弊端:
 目前已知的ngentask.exe、sdiagnhost.exe服务会触发这个检测规则(看样子是为了执行一些更新服务从微软服务端下载了一些shellcode之类的去运行).如果后续优化则需要做一个数字签名校验等给这些特殊的进程进行加白操作.这是工程问题,不是这个demo的问题
+
+详细帖子链接:
+<https://key08.com/index.php/2021/07/25/1260.html>
+相似但是不相同的项目:
+<https://key08.com/index.php/2021/02/24/912.html>
