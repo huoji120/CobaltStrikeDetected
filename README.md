@@ -62,21 +62,21 @@ bool WalkStack(int pHeight)
 编译好驱动,加载驱动,之后运行测试看看:
 
 1. 普通生成(x32与x64)测试:
-![1.png](https://key08.com/usr/uploads/2021/07/1900957468.png)
+![1.png](https://raw.githubusercontent.com/huoji120/CobaltStrikeDetected/master/images/1.png)
 
 2. 基于VirtualAlloc的C代码测试:
-![](https://key08.com/usr/uploads/2021/07/2744386473.png)
+![](https://raw.githubusercontent.com/huoji120/CobaltStrikeDetected/master/images/2.png)
 
 测试结果:
-![3.png](https://key08.com/usr/uploads/2021/07/4289634004.png)
+![3.png](https://raw.githubusercontent.com/huoji120/CobaltStrikeDetected/master/images/3.png)
 
 3. 基于powershell的测试:
-![4.png](https://key08.com/usr/uploads/2021/07/3783836506.png)
+![4.png](https://raw.githubusercontent.com/huoji120/CobaltStrikeDetected/master/images/4.png)
 
 4. 基于python的测试
-![5.png](https://key08.com/usr/uploads/2021/07/3097427558.png)
+![5.png](https://raw.githubusercontent.com/huoji120/CobaltStrikeDetected/master/images/5.png)
 测试结果:
-![6.png](https://key08.com/usr/uploads/2021/07/3732484835.png)
+![6.png](https://raw.githubusercontent.com/huoji120/CobaltStrikeDetected/master/images/6.png)
 
 弊端:
 目前已知的ngentask.exe、sdiagnhost.exe服务会触发这个检测规则(看样子是为了执行一些更新服务从微软服务端下载了一些shellcode之类的去运行).如果后续优化则需要做一个数字签名校验等给这些特殊的进程进行加白操作.这是工程问题,不是这个demo的问题
